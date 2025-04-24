@@ -143,85 +143,61 @@ $(document).ready(function() {
                     <div>
                         <h4 class="text-lg font-semibold mb-2">Fonctionnalités</h4>
                         <ul class="list-disc list-inside text-gray-300 space-y-1">
-
-                            <p># Gestion des appareils :</p>
-                            <li>Ajout, modification et suppression des appareils pris en charge</li>
-                            <li>Attribution d'un identifiant unique à chaque appareil</li>
-
-                            <p># Association des pièces détachées aux appareils :</p>
-                            <li>Possibilité d'associer des pièces détachées spécifiques à chaque appareil</li>
-                            <li>Liste des pièces recommandées pour chaque appareil</li>
                             
-                            <p># Recherche par appareil :</p>
-                            <li>Fonction de recherche permettant de trouver rapidement les pièces détachées associées à
+                            <p>Gestion des appareils :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Ajout, modification et suppression des appareils pris en charge</li>
+                                <li>Attribution d'un identifiant unique à chaque appareil</li>
+                            </ul>
+                            
+
+                            <p>Association des pièces détachées aux appareils :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Possibilité d'associer des pièces détachées spécifiques à chaque appareil</li>
+                                <li>Liste des pièces recommandées pour chaque appareil</li>
+                            </ul>
+                            
+                            <p>Recherche par appareil :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Fonction de recherche permettant de trouver rapidement les pièces détachées associées à
                                 un appareil spécifique</li>
+                            </ul>
 
-                            <p># Informations détaillées sur les appareils :</p>
-                            <li>Stock actuel des pièces détachées associées à chaque appareil</li>
-                            <li>Historique des utilisations de pièces pour chaque appareil</li>
+                            <p>Informations détaillées sur les appareils :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Stock actuel des pièces détachées associées à chaque appareil</li>
+                                <li>Historique des utilisations de pièces pour chaque appareil</li>
+                            </ul>
 
-                            <p># Gestion des pièces détachées :</p>
-                            <li>Ajout, modification et suppression des pièces détachées</li>
-                            <li>Attribution d'un identifiant unique à chaque pièce.</li>
+                            <p>Gestion des pièces détachées :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Ajout, modification et suppression des pièces détachées</li>
+                                <li>Attribution d'un identifiant unique à chaque pièce.</li>
+                            </ul>
 
-                            <p># Informations détaillées sur les pièces :</p>
-                            <li>Stock actuel, prix, description, fournisseur, etc</li>
+                            <p>Informations détaillées sur les pièces :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Stock actuel, prix, description, fournisseur, etc</li>
+                            </ul>
 
-                            <p># Suivi des entrées et sorties :</p>
-                            <li>Enregistrement des mouvements de stock, y compris les entrées (nouvelles pièces) et les
+                            <p>Suivi des entrées et sorties :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Enregistrement des mouvements de stock, y compris les entrées (nouvelles pièces) et les
                                 sorties (utilisées pour les réparations)</li>
+                            </ul>
                             
-                            <p># Gestion des fournisseurs :</p>
-                            <li>Liste des fournisseurs avec les détails de contact</li>
-                        </ul>
+                            <p>Gestion des fournisseurs :</p>
+                            <ul class="list-disc list-inside ml-5">
+                                <li>Liste des fournisseurs avec les détails de contact</li>
+                            </ul>
+                        </p>
                     </div>
                     
                     <div>
                         <h4 class="text-lg font-semibold mb-2">Technologies utilisées</h4>
                         <ul class="list-disc list-inside text-gray-300 space-y-1">
-                            <li>Frontend: Vue.js, Tailwind CSS</li>
-                            <li>Backend: Firebase</li>
-                            <li>Base de données: Firestore</li>
-                        </ul>
-                    </div>
-
-                    <div class="mt-6">
-                        <a href="#" class="text-ocean hover:text-blue-400 inline-flex items-center gap-2" id="download-specs">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                            Télécharger le cahier des charges
-                        </a>
-                    </div>
-                </div>
-            `
-        },
-        'weather': {
-            title: 'E-commerce Platform',
-            description: `
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-2">Description du projet</h4>
-                        <p class="text-gray-300">Une plateforme e-commerce complète permettant aux utilisateurs de parcourir des produits, gérer leur panier et effectuer des achats en ligne de manière sécurisée.</p>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-lg font-semibold mb-2">Objectifs</h4>
-                        <ul class="list-disc list-inside text-gray-300 space-y-1">
-                            <li>Créer une interface utilisateur intuitive et responsive</li>
-                            <li>Implémenter un système de paiement sécurisé</li>
-                            <li>Gérer les stocks en temps réel</li>
-                            <li>Permettre aux administrateurs de gérer les produits</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="text-lg font-semibold mb-2">Technologies utilisées</h4>
-                        <ul class="list-disc list-inside text-gray-300 space-y-1">
-                            <li>Frontend: React.js, Redux, Tailwind CSS</li>
-                            <li>Backend: Node.js, Express</li>
-                            <li>Base de données: MongoDB</li>
-                            <li>Paiement: Stripe API</li>
+                            <li>Backend/Frontend: C# MAUI</li>
+                            <li>Base de données: SQLite</li>
                         </ul>
                     </div>
 
