@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann ASTIER - Parcours</title>
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ocean': '#0077be',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                        'space': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-outfit">
+    <!-- Navbar -->
+    <nav class="bg-gray-950 fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-ocean font-bold text-xl">Yann ASTIER</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                        <a href="parcours.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mon parcours</a>
+                        <a href="certifications.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mes certifications</a>
+                        <a href="projects.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mes projets</a>
+                        <a href="veille.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Veille Technologique</a>
+                        <a href="documentation.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Documentation</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="../index.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                <a href="parcours.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mon parcours</a>
+                <a href="certifications.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mes certifications</a>
+                <a href="projects.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mes projets</a>
+                <a href="veille.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Veille Technologique</a>
+                <a href="documentation.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Documentation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Parcours Section -->
+        <section class="py-20 flex items-center justify-center p-8">
+            <div class="w-4/5 max-w-6xl">
+                <h2 class="text-4xl font-bold text-ocean mb-8 font-space">Mon parcours professionnel</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold mb-2">Manager McDonald's</h3>
+                            <h3 class="text-1xl text-gray-300 mb-2">Aout 2021 | Aujourd'hui</h3>
+                        </div>
+                        
+                        <h3 class="text-1xl mb-5">McDonalds Poitiers Est, Poitiers</h3>
+
+                        <p class="text-gray-300">Manager depuis 2023, je gère une équipe de 14+ personnes afin de répondre à la demande
+                            du client dans les plus bref délais.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold mb-2">Developpeur Full Stack </h3>
+                            <h3 class="text-1xl text-gray-300 mb-2">Janv 2025 | Fev 2025</h3>
+                        </div>
+
+                        <h3 class="text-1xl mb-5">StylDev, Saint-Georges-Lès-Baillargeaux</h3>
+
+                        <p class="text-gray-300">Développement d'une solution logiciel pour les suivis de stage et aide
+                            à la création de convention.</p>
+                        <ul class="list-disc list-inside ml-5 text-gray-300">
+                            <li>Dashboard avec statistiques des suivi de conventions</li>
+                            <li>Extranet authentifié</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold mb-2">Développeur Web CRM</h3>
+                            <h3 class="text-1xl text-gray-300 mb-2">Mai 2024 | Juin 2024</h3>
+                        </div>
+                        
+                        <h3 class="text-1xl mb-5">ADWEB-Conseil, Chenevelles</h3>
+
+                        <p class="text-gray-300">Développement d'une extension du site de l'entreprise destinée à organiser les demandes de congés des employés.</p>
+                        <ul class="list-disc list-inside ml-5 text-gray-300">
+                            <li>Calendrier visuel</li>
+                            <li>Confirmation par mail</li>
+                            <li>Export des données pour comptabilité</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold mb-2">Technicien Polyvalent</h3>
+                            <h3 class="text-1xl text-gray-300 mb-2">Févr 2023 | Mars 2023</h3>
+                        </div>
+                        
+                        <h3 class="text-1xl mb-5">Linexos, Chasseneuil-du-Poitou</h3>
+
+                        <p class="text-gray-300">Missions en tous genres tel que :</p>
+                        <ul class="list-disc list-inside ml-5 text-gray-300">
+                            <li>Création d'une mallette de présentation pour la solution de l'entreprise "Belooga Track"</li>
+                            <li>Développement de programmes en "Ladder"</li>
+                            <li>Soudure</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            
+           
+                <h2 class="text-4xl font-bold text-ocean mb-8 font-space pt-20">Mon parcours scolaire</h2>
+                <div class="space-y-6">
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold mb-2">BTS SIO option SLAM</h3>
+                            <h3 class="text-1xl text-gray-300 mb-2">Sept 2023 | A ce jour</h3>
+                        </div>
+                        
+                        <h3 class="text-1xl mb-5">Lycée aliénor d'aquitaine, Poitiers</h3>
+
+                        <p class="text-gray-300">Acquis :</p>
+                        <ul class="list-disc list-inside ml-5 text-gray-300">
+                            <li>Développement site web, App Web & mobile</li>
+                            <li>Gestion réseau</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold mb-2">Baccalauréat  Professionnel option RISC</h3>
+                            <h3 class="text-1xl text-gray-300 mb-2">Sept 2023 | A ce jour</h3>
+                        </div>
+                        
+                        <h3 class="text-1xl mb-5">Lycée Edouard Branly, Châtellerault</h3>
+
+                        <p class="text-gray-300">Acquis :</p>
+                        <ul class="list-disc list-inside ml-5 text-gray-300">
+                            <li>Mention très bien</li>
+                            <li>Formation à l’habilitation B1V</li>
+                            <li>Dépannage informatique</li>
+                            <li>Installations de postes</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann ASTIER - Projets</title>
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ocean': '#0077be',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                        'space': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-outfit">
+    <!-- Navbar -->
+    <nav class="bg-gray-950 fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-ocean font-bold text-xl">Yann ASTIER</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                        <a href="parcours.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mon parcours</a>
+                        <a href="certifications.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mes certifications</a>
+                        <a href="projects.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mes projets</a>
+                        <a href="veille.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Veille Technologique</a>
+                        <a href="documentation.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Documentation</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="../index.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                <a href="parcours.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mon parcours</a>
+                <a href="certifications.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mes certifications</a>
+                <a href="projects.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mes projets</a>
+                <a href="veille.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Veille Technologique</a>
+                <a href="documentation.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Documentation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+
+        <div id="popup-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center mt-10 pt-5">
+            <div class="bg-gray-800 w-11/12 max-w-4xl rounded-lg shadow-2xl p-6 max-h-[90vh] overflow-y-auto">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 id="popup-title" class="text-2xl font-bold text-ocean"></h3>
+                    <button id="close-popup" class="text-gray-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="popup-content" class="space-y-6">
+                    <!-- Content will be dynamically inserted here -->
+                    <div class="mt-6">
+                        <a href="#" class="text-ocean hover:text-blue-400 inline-flex items-center gap-2" id="download-specs" target="_blank">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Télécharger le cahier des charges
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 flex items-center justify-center p-8">
+            <div class="w-4/5 max-w-6xl">
+                <h2 class="text-4xl font-bold text-ocean mb-8 font-space">Mes projets</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg group hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-bold mb-2">HegreLand</h3>
+                        <p class="text-gray-300 mb-4">Application web de gestion d'un parc d'attraction. Développée dans le cadre de mon BTS</p>
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="bg-ocean/20 text-ocean px-2 py-1 rounded-md text-sm">Symfony 7</span>
+                            <span class="bg-ocean/20 text-ocean px-2 py-1 rounded-md text-sm">Bootstrap</span>
+                            <span class="bg-ocean/20 text-ocean px-2 py-1 rounded-md text-sm">PostgreSQL</span>
+                        </div>
+                        <a href="javascript:void(0)"
+                           class="project-link text-ocean hover:text-blue-400 inline-flex items-center gap-1"
+                           data-project="hegreland"
+                           data-pdf="../pdf/HEGRELAND_CahierDesCharges.pdf"
+                           target="_blank">
+                            Voir le projet <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg group hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-bold mb-2">AppSAV</h3>
+                        <p class="text-gray-300 mb-4">Application de gestion de stock de pièces SAV. Développée dans le cadre de mon BTS</p>
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="bg-ocean/20 text-ocean px-2 py-1 rounded-md text-sm">Android</span>
+                            <span class="bg-ocean/20 text-ocean px-2 py-1 rounded-md text-sm">C# (MAUI)</span>
+                            <span class="bg-ocean/20 text-ocean px-2 py-1 rounded-md text-sm">SQLite</span>
+                        </div>
+                        <a href="#" class="project-link text-ocean hover:text-blue-400 inline-flex items-center gap-1"
+                           data-project="appsav"
+                           data-pdf="../pdf/APPSAV_CahierDesCharges.pdf"
+                           target="_blank">
+                            Voir le projet <span class="group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html> 

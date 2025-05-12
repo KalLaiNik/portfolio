@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann ASTIER - Veille Technologique</title>
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ocean': '#0077be',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                        'space': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-outfit">
+    <!-- Navbar -->
+    <nav class="bg-gray-950 fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-ocean font-bold text-xl">Yann ASTIER</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                        <a href="parcours.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mon parcours</a>
+                        <a href="certifications.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mes certifications</a>
+                        <a href="projects.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Mes projets</a>
+                        <a href="veille.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Veille Technologique</a>
+                        <a href="documentation.html" class="hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Documentation</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="../index.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                <a href="parcours.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mon parcours</a>
+                <a href="certifications.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mes certifications</a>
+                <a href="projects.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Mes projets</a>
+                <a href="veille.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Veille Technologique</a>
+                <a href="documentation.html" class="block hover:bg-gray-700 hover:text-ocean px-3 py-2 rounded-md text-base font-medium">Documentation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Veille Section -->
+        <section class="py-20 flex items-center justify-center p-8">
+            <div class="w-4/5 max-w-6xl">
+                <h2 class="text-4xl font-bold text-ocean mb-8 font-space">Veille Technologique</h2>
+
+                <!-- Outils de Veille -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-2xl font-bold text-ocean mb-4">Outils de Veille</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-2">Agrégateur de fils RSS</h4>
+                            <p class="text-gray-300">Utilisation de Feedly pour centraliser et suivre les actualités de mes sujets de veille</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-2">Alertes Mails</h4>
+                            <p class="text-gray-300">Configuration d'alertes Google pour recevoir les dernières actualités directement dans ma boîte mail</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-2">Newsletter</h4>
+                            <p class="text-gray-300">Abonnement aux newsletters spécialisées pour rester informé des évolutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sujets de Veille -->
+                <div class="space-y-8">
+                    <!-- Star Citizen -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-ocean mb-4">Le Server Meshing dans Star Citizen</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold mb-2">Pourquoi ce sujet ?</h4>
+                            <p class="text-gray-300">Le server meshing représente une innovation majeure dans le développement des jeux vidéo MMO. Star Citizen, en tant que pionnier de cette technologie, offre un cas d'étude fascinant sur la façon dont les jeux peuvent évoluer vers des univers persistants et véritablement massifs.</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold mb-2">Dernières Actualités</h4>
+                            <div class="space-y-4">
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-400">Implémentation du Server Meshing statique (Alpha 4.1)</p>
+                                    <p class="text-gray-300">En mars 2025, Star Citizen a introduit le Server Meshing statique avec la mise à jour Alpha 4.1. Cette technologie permet à plusieurs serveurs de gérer différentes zones de l'univers du jeu, améliorant ainsi la stabilité et la fluidité de l'expérience multijoueur. Cela représente une étape importante vers une architecture plus dynamique et évolutive.</p>
+                                </div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-400">Départ de développeurs clés vers CCP Games</p>
+                                    <p class="text-gray-300">Récemment, certains développeurs impliqués dans le développement du Server Meshing de Star Citizen ont rejoint CCP Games pour travailler sur un nouveau MMO spatial. Ce mouvement pourrait influencer la direction technique future de Star Citizen.</p>
+                                </div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-400">Focus sur la jouabilité et l'optimisation en 2025</p>
+                                    <p class="text-gray-300">Selon une lettre du président de Cloud Imperium Games, l'année 2025 est dédiée à la stabilisation, à l'optimisation et à l'amélioration de la jouabilité. Bien que le Server Meshing dynamique soit en développement, l'accent est mis sur la consolidation des fonctionnalités existantes pour offrir une expérience de jeu plus fluide.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-ocean mb-4">La Blockchain et son impact dans différents domaines</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold mb-2">Pourquoi ce sujet ?</h4>
+                            <p class="text-gray-300">La blockchain révolutionne de nombreux secteurs au-delà de la finance. Son potentiel pour la transparence, la sécurité et la décentralisation en fait une technologie clé pour l'avenir du développement logiciel et des systèmes d'information.</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold mb-2">Dernières Actualités</h4>
+                            <div class="space-y-4">
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-400">Mise à niveau Pectra d'Ethereum</p>
+                                    <p class="text-gray-300">NEn mai 2025, Ethereum a déployé la mise à niveau Pectra, intégrant 11 propositions d'amélioration. Cette mise à jour vise à augmenter la vitesse des transactions et à réduire les coûts, tout en améliorant l'utilisabilité des portefeuilles et en augmentant le plafond de staking de 32 à 2 048 ETH par validateur.</p>
+                                </div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-400">Réglementation accrue des actifs numériques aux États-Unis</p>
+                                    <p class="text-gray-300">La SEC, sous la direction de Paul Atkins, prévoit de moderniser les règles existantes pour faciliter l'enregistrement et la gestion des actifs cryptographiques. Parallèlement, la Chambre des représentants examine une nouvelle législation visant à clarifier la classification des actifs numériques en tant que titres ou non.</p>
+                                </div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-400">Intégration de la blockchain dans les services financiers traditionnels</p>
+                                    <p class="text-gray-300">Des entreprises comme Mastercard développent des réseaux de jetons multiples pour faciliter les transactions d'actifs numériques entre consommateurs, commerçants et institutions financières. Cette initiative vise à créer une infrastructure de paiement numérique similaire à Venmo, mais basée sur la blockchain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bénéfices -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-ocean mb-4">Bénéfices de la Veille</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <h4 class="text-lg font-semibold mb-2">Compétences Techniques</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Compréhension approfondie des architectures distribuées</li>
+                                    <li>Connaissance des dernières innovations en matière de performance réseau</li>
+                                    <li>Expertise dans les technologies émergentes</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <h4 class="text-lg font-semibold mb-2">Avantages Professionnels</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Capacité à anticiper les tendances technologiques</li>
+                                    <li>Adaptation rapide aux nouvelles technologies</li>
+                                    <li>Valeur ajoutée pour les projets innovants</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html> 
