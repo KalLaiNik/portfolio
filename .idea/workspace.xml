@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaa5328c-423c-4306-9026-3ac232d17d2e" name="Changes" comment="Test files upload">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    <list default="true" id="eaa5328c-423c-4306-9026-3ac232d17d2e" name="Changes" comment="One-Page -&gt; Multi-Page">
+      <change afterPath="$PROJECT_DIR$/pdf/ASTIER_TableauDeSynthese.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/documentation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,9 @@
       <workItem from="1745496622547" duration="800000" />
       <workItem from="1745521581691" duration="636000" />
       <workItem from="1745749558138" duration="1306000" />
-      <workItem from="1746449494323" duration="3385000" />
+      <workItem from="1746449494323" duration="4686000" />
+      <workItem from="1747118962606" duration="55000" />
+      <workItem from="1747119028536" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="Update #2">
       <option name="closed" value="true" />
@@ -92,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745749697724</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="One-Page -&gt; Multi-Page">
+      <option name="closed" value="true" />
+      <created>1747091767634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747091767634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update #2" />
     <MESSAGE value="Test files upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test files upload" />
+    <MESSAGE value="One-Page -&gt; Multi-Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="One-Page -&gt; Multi-Page" />
   </component>
 </project>
