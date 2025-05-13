@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaa5328c-423c-4306-9026-3ac232d17d2e" name="Changes" comment="One-Page -&gt; Multi-Page">
-      <change afterPath="$PROJECT_DIR$/pdf/ASTIER_TableauDeSynthese.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eaa5328c-423c-4306-9026-3ac232d17d2e" name="Changes" comment="Added Tableau de synthèse">
       <change beforePath="$PROJECT_DIR$/pages/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/documentation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +76,7 @@
       <workItem from="1746449494323" duration="4686000" />
       <workItem from="1747118962606" duration="55000" />
       <workItem from="1747119028536" duration="44000" />
+      <workItem from="1747119083155" duration="92000" />
     </task>
     <task id="LOCAL-00001" summary="Update #2">
       <option name="closed" value="true" />
@@ -103,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747091767634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Tableau de synthèse">
+      <option name="closed" value="true" />
+      <created>1747119155012</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747119155012</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="Update #2" />
     <MESSAGE value="Test files upload" />
     <MESSAGE value="One-Page -&gt; Multi-Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="One-Page -&gt; Multi-Page" />
+    <MESSAGE value="Added Tableau de synthèse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tableau de synthèse" />
   </component>
 </project>
